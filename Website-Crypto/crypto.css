@@ -1,0 +1,200 @@
+/* whole page */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #010101;
+}
+
+/* Button */
+.decor_button {
+	text-align: center;
+	margin: auto;
+	width: 20vw;
+	padding: 3vw 0;
+}
+
+	.decor_button button {
+		color: goldenrod;
+		background-color: black;
+		padding: 0.5vw 1.5vw;
+		border: 1px solid gold;
+		border-radius: 2vw;
+		font-family: serif;
+		font-weight: 250;
+		font-size: 1.5vw;
+		transition-duration: 0.4s;
+	}
+
+		.decor_button button:hover,
+		.decor_button button:active {
+			color: black;
+			background-color: goldenrod;
+			border-radius: 2vw;
+			box-shadow: 0 0.4vw 0.6vw 0 goldenrod;
+		}
+
+		.decor_button button:hover {
+			box-shadow: 0 0.4vw 0.6vw 0 goldenrod;
+		}
+
+		.decor_button button:active {
+			transition-duration: 0s;
+			box-shadow: 0 0.4vw 0.6vw 0 gray;
+			transform: translateY(0.1vw);
+		}
+
+/* Whole body */
+.whole_page {
+	background-color: black;
+	padding: 8%;
+	font-family: Calibri, sans-serif;
+}
+
+/* Page name styles */
+.page_name {
+	background-color: #010101;
+	color: white;
+	overflow: auto;
+	white-space: nowrap;
+	text-align: left;
+	padding: 1.5vw 1vw;
+	font-weight: 500;
+	font-size: 4vw;
+}
+
+/* Intro styles */
+.intro {
+	background-color: #010101;
+	color: gray;
+	overflow: auto;
+	white-space: nowrap;
+	text-align: left;
+	padding: 0.7vw;
+	font-weight: 450;
+	font-size: 1.5vw;
+}
+
+/* Block title styles */
+.block_title {
+	color: white;
+	white-space: nowrap;
+	text-align: left;
+	padding-top: 2vw;
+	padding-bottom: 0;
+	font-weight: 500;
+	font-size: 2.3vw;
+}
+
+/* Outer block styles */
+.outer_block {	
+	display: flex;
+	padding-left: 1vw;
+	align-items: center;
+}
+
+/* Crypto block styles */
+.crypto_block {
+	display: inline-block;
+	border: 2px solid goldenrod;
+	border-radius: 2vw;
+	padding: 2vw 3vw;
+	margin: 1vw;
+}
+
+	.crypto_block:hover {
+		box-shadow: 0 0.2vw 0.3vw 0 goldenrod;
+	}
+
+	.crypto_block img {
+		display: block;
+		width: 4vw;
+		height: 4vw;
+	}
+
+	.crypto_block p {
+		color: white;
+		text-align: center;
+		font-size: 1.2vw;
+	}
+
+/* Crypto block no border styles */
+.crypto_block_no_border {
+	display: inline-block;
+	margin: auto;
+	vertical-align: middle;
+}
+
+	.crypto_block_no_border button,
+	.crypto_block_no_border button:active {
+		padding: 2.5vw 1.5vw;
+		border-radius: 5vw;
+		font-family: Calibri, sans-serif;
+		font-weight: 600;
+		font-size: 1.5vw;
+		border: 3px solid goldenrod;
+		background-color: #010101;
+		color: goldenrod;
+		transition-duration: 0.4s;
+	}
+
+		.crypto_block_no_border button:hover {
+			padding: 2.5vw 1.5vw;
+			border-radius: 5vw;
+			background-color: darkgrey;
+			color: black;
+			transition-duration: 1s;
+		}
+
+		.crypto_block_no_border button:active {
+			transform: translateY(1.5vw);
+		}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+	.decor_button {
+		width: 80vw;
+		padding: 10vw 0;
+	}
+
+		.decor_button button {
+			padding: 5vw 10vw;
+			font-size: 5vw;
+		}
+
+	.whole_page {
+		padding: 10%;
+	}
+
+	.page_name {
+		padding: 3vw 2vw;
+		font-size: 6vw;
+	}
+
+	.intro {
+		padding: 2vw;
+		font-size: 3vw;
+	}
+
+	.block_title {
+		padding-top: 3vw;
+		font-size: 5vw;
+	}
+
+	.outer_block {
+		padding-left: 2vw;
+	}
+
+	.crypto_block {
+		padding: 3vw 8vw;
+		margin: 2vw;
+	}
+
+		.crypto_block img {
+			width: 20vw;
+			height: 20vw;
+		}
+
+		.crypto_block p {
+			font-size: 4vw;
+		}
+}

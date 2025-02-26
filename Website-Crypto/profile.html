@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptex - Buy & Sell Digital Assets In The cryptex</title>
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: hsl(228, 9%, 10%) !important;
+        }
+    </style>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="32" height="32" alt="Cryptex logo">
+                Cryptex
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="crypto.html" class="navbar-link active" data-nav-link>Homepage</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="AssetDetail.html" class="navbar-link" data-nav-link>Markets</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="FaqMainPage.html" class="navbar-link" data-nav-link>FAQ</a>
+                    </li>
+
+                    <!--
+                              <li class="navbar-item">
+                <a href="#" class="navbar-link" data-nav-link>Sell Crypto</a>
+            </li>
+                              -->
+
+                </ul>
+            </nav>
+
+            <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <a href="profile.html" class="btn btn-outline">Wallet</a>
+            <a href="login.html" class="btn btn-outline">Login</a>
+
+        </div>
+    </header>
+    
+    <main>
+        <article>
+            <section class="section hero" aria-label="hero" data-section>
+                <div class="container">
+        
+                  <div class="hero-content">
+        
+                    <h1 class="h1 hero-title">Your Account</h1>
+        
+                    <p class="hero-text">
+                      Coin Cryptex is the easiest, safest, and fastest way to buy & sell crypto asset exchange.
+                    </p>
+                  </div>
+        
+                  <figure class="hero-banner">
+                    <img src="./assets/images/hero-banner.png" width="570" height="448" alt="hero banner" class="w-100">
+                  </figure>
+        
+                </div>
+              </section>
+
+    <div class="container light-style flex-grow-1 container-p-y">
+        <div class="card overflow-hidden">
+            <div class="row no-gutters row-bordered row-border-light">
+                <div class="col-md-3 pt-0">
+                    <div class="list-group list-group-flush account-settings-links">
+                        <a class="list-group-item list-group-item-action active" data-toggle="list"
+                            href="#account-general">General</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-change-password">Change password</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-info">Info</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-social-links">Social links</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-connections">History</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-notifications">Notifications</a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="account-general">
+                            <div class="card-body media align-items-center">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt
+                                    class="d-block ui-w-80">
+                                <div class="media-body ml-4">
+                                    <label class="btn btn-outline-primary">
+                                        Upload new photo
+                                        <input type="file" class="account-settings-fileinput">
+                                    </label> &nbsp;
+                                    <button type="button" class="btn btn-default md-btn-flat">Reset</button>
+                                </div>
+                            </div>
+                            <hr class="border-light m-0">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="form-label">Username</label>
+                                    <input type="text" class="form-control mb-1" value="mArIkO">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-control" value="Doan Nhat Long">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">E-mail</label>
+                                    <input type="text" class="form-control mb-1" value="doannhatlong0123@gmail.com">
+                                    <div class="alert alert-warning mt-3">
+                                        Your email is not confirmed. Please check your inbox.<br>
+                                        <a href="javascript:void(0)">Resend confirmation</a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Company</label>
+                                    <input type="text" class="form-control" value="Company Ltd.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-change-password">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label">Current password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">New password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Repeat new password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-info">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label">Bio</label>
+                                    <textarea class="form-control"
+                                        rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nunc arcu, dignissim sit amet sollicitudin iaculis, vehicula id urna. Sed luctus urna nunc. Donec fermentum, magna sit amet rutrum pretium, turpis dolor molestie diam, ut lacinia diam risus eleifend sapien. Curabitur ac nibh nulla. Maecenas nec augue placerat, viverra tellus non, pulvinar risus.</textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Birthday</label>
+                                    <input type="text" class="form-control" value="May 24, 2004">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Country</label>
+                                    <select class="custom-select">
+                                        <option>USA</option>
+                                        <option selected>VietNam</option>
+                                        <option>UK</option>
+                                        <option>Germany</option>
+                                        <option>France</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr class="border-light m-0">
+                            <div class="card-body pb-2">
+                                <h6 class="mb-4">Contacts</h6>
+                                <div class="form-group">
+                                    <label class="form-label">Phone</label>
+                                    <input type="text" class="form-control" value="+0 (123) 456 7891">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Website</label>
+                                    <input type="text" class="form-control" value>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-social-links">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label">Twitter</label>
+                                    <input type="text" class="form-control" value="https://twitter.com/user">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Facebook</label>
+                                    <input type="text" class="form-control" value="https://www.facebook.com/user">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Google+</label>
+                                    <input type="text" class="form-control" value>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">LinkedIn</label>
+                                    <input type="text" class="form-control" value>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Instagram</label>
+                                    <input type="text" class="form-control" value="https://www.instagram.com/user">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-connections">
+                            <div class="card-body">
+                                <p class="History"> Sell &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Buy
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Type 
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Network
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Status
+                                </p> 
+                            </div>
+                            <hr class="border-light m-0">
+
+                            <div class="logo-container">
+                              <img src="./assets/images/coin-2.svg" width="20" height="20" alt="Ethereum logo" class="img">
+                              <p>10 ETH</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <img src="./assets/images/coin-1.svg" width="20" height="20" alt="Bitcoin logo" class="img">
+                              <p>0.043 BTC &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Market
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Base
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Success</p>
+                            </div>
+
+                            <hr class="border-light m-0">
+
+                            <div class="logo-container">
+                              <img src="./assets/images/coin-3.svg" width="20" height="20" alt="Tether logo" class="img">
+                              <p>5000 USDT</p>&nbsp;&nbsp;&nbsp;
+                              <img src="./assets/images/coin-4.svg" width="20" height="20" alt="BNB logo" class="img">
+                              <p>50 BNB &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Limit
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ethereum
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Success</p>
+                            </div>
+
+                            <hr class="border-light m-0">
+                            <div class="logo-container">
+                              <img src="./assets/images/coin-5.svg" width="20" height="20" alt="Solana logo" class="img">
+                              <p>10 SOL</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <img src="./assets/images/coin-6.svg" width="20" height="20" alt="XRP logo" class="img">
+                              <p>100 XRP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Market
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Polygon
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fill 100%</p>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="account-notifications">
+                            <div class="card-body pb-2">
+                                <h6 class="mb-4">Activity</h6>
+                                <div class="form-group">
+                                    <label class="switcher">
+                                        <input type="checkbox" class="switcher-input" checked>
+                                        <span class="switcher-indicator">
+                                            <span class="switcher-yes"></span>
+                                            <span class="switcher-no"></span>
+                                        </span>
+                                        <span class="switcher-label">Email me when someone comments on my article</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="switcher">
+                                        <input type="checkbox" class="switcher-input" checked>
+                                        <span class="switcher-indicator">
+                                            <span class="switcher-yes"></span>
+                                            <span class="switcher-no"></span>
+                                        </span>
+                                        <span class="switcher-label">Email me when someone answers on my forum
+                                            thread</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="switcher">
+                                        <input type="checkbox" class="switcher-input">
+                                        <span class="switcher-indicator">
+                                            <span class="switcher-yes"></span>
+                                            <span class="switcher-no"></span>
+                                        </span>
+                                        <span class="switcher-label">Email me when someone follows me</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <hr class="border-light m-0">
+                            <div class="card-body pb-2">
+                                <h6 class="mb-4">Application</h6>
+                                <div class="form-group">
+                                    <label class="switcher">
+                                        <input type="checkbox" class="switcher-input" checked>
+                                        <span class="switcher-indicator">
+                                            <span class="switcher-yes"></span>
+                                            <span class="switcher-no"></span>
+                                        </span>
+                                        <span class="switcher-label">News and announcements</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="switcher">
+                                        <input type="checkbox" class="switcher-input">
+                                        <span class="switcher-indicator">
+                                            <span class="switcher-yes"></span>
+                                            <span class="switcher-no"></span>
+                                        </span>
+                                        <span class="switcher-label">Weekly product updates</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="switcher">
+                                        <input type="checkbox" class="switcher-input" checked>
+                                        <span class="switcher-indicator">
+                                            <span class="switcher-yes"></span>
+                                            <span class="switcher-no"></span>
+                                        </span>
+                                        <span class="switcher-label">Weekly blog digest</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-right mt-3">
+            <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
+            <button type="button" class="btn btn-default">Cancel</button>
+        </div>
+    </div>
+</article>
+</main>
+
+
+
+    <footer class="footer">
+   
+        <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav></button>
+        <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav></button>
+    
+        <div class="footer-top" data-section>
+          <div class="container">
+    
+            <div class="footer-brand">
+    
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="50" height="50" alt="Cryptex logo">
+                Cryptex
+              </a>
+    
+              <h2 class="footer-title">Let's talk! 🤙</h2>
+    
+              <a href="tel:+123456789101" class="footer-contact-link">+12 345 678 9101</a>
+    
+              <a href="mailto:longdnsws00428@fpt.edu.vn" class="footer-contact-link">longdnsws00428@fpt.edu.vn</a>
+    
+              <address class="footer-contact-link">
+                A35 Bach Dang Street, Ward 2, Tan Binh District, Ho Chi Minh City
+              </address>
+    
+            </div>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Products</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Spot</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Inverse Perpetual</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">USDT Perpetual</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Exchange</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Launchpad</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Binance Pay</a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Services</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Buy Crypto</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Markets</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Tranding Fee</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Affiliate Program</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Referral Program</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">API</a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Support</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Bybit Learn</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Help Center</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">User Feedback</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Submit a request</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">API Documentation</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Trading Rules</a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">About Us</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">About Bybit</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Authenticity Check</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Careers</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Business Contacts</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Blog</a>
+              </li>
+    
+            </ul>
+    
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <div class="container">
+    
+            <p class="copyright">
+              &copy; 2024 Cryptex All Rights Reserved by <a href="#" class="copyright-link">HELLOTHERE</a>
+            </p>
+    
+            <ul class="social-list">
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+    
+            </ul>
+    
+          </div>
+        </div>
+    
+    </footer>
+    
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="./assets/js/script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

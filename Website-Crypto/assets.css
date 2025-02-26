@@ -1,0 +1,53 @@
+﻿body {
+    margin: 0;
+    padding: 0 4%;
+    background-color: #010101;
+    font-family: Calibri;
+}
+
+.whole_assets_page{
+    padding: 4%;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: gray;
+    font-size: 130%;
+}
+
+.market_overview{
+    padding: 5% 0;
+    text-align: center;
+}
+
+table {
+    width: 60%;
+    text-align: center;    
+    margin: auto;
+}
+    .market_overview th, .market_overview td{
+        color: white;        
+        text-align: left;          
+        padding: 8px 0;
+    }
+    .market_overview th{
+        font-size: 1.3rem;
+    }
+.market_overview td {
+    border-top: 2px solid #383838;
+    font-size: 110%;
+}
+.market_overview td img, .market_overview td a {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+    
+    .market_overview td a {
+        text-decoration: none;
+        color: white;
+    }
+

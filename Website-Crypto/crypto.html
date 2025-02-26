@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptex - Home page</title>
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: hsl(228, 9%, 10%) !important;
+        }
+    </style>
+    <!--  -->
+    <link rel="stylesheet" href="crypto.css" />
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="homepage.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="32" height="32" alt="Cryptex logo">
+                Cryptex
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="crypto.html" class="navbar-link active" data-nav-link>Homepage</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="AssetDetail.html" class="navbar-link" data-nav-link>Markets</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="FaqMainPage.html" class="navbar-link" data-nav-link>FAQ</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <a href="profile.html" class="btn btn-outline">Wallet</a>
+            <a href="login.html" class="btn btn-outline">Login</a>
+        </div>
+    </header>
+
+    <!-- main body -->
+    <div class="whole_page">
+        <div class="page_name">Cryptex </div>
+        <div class="intro">
+            <p>
+                Join over 10 million people from all over the world    <br />
+                Dive into the world of crypto with us, your gateway to trends, insights, and the latest in digital currencies
+            </p>
+        </div>
+        <img src="img/header.jpg" width="100%" height="540" />
+        <!-- button -->
+        <div class="decor_button">
+            <button type="button" onclick="go_to_account()">INVEST RIGHT NOW</button>   <!-- jumps to creating account-->
+        </div>
+        <!-- cypto blocks -->
+        <h2 class="block_title">START TRADING CRYPTO:</h2>
+        <div class="outer_block">
+            <div class="crypto_block">
+                <img src="img/bitcoin.jpg" />
+                <p>Bitcoin</p>
+            </div>
+            <div class="crypto_block">
+                <img src="img/ethereum.png" />
+                <p>Ethereum</p>
+            </div>
+            <div class="crypto_block">
+                <img src="img/tether.png" />
+                <p>Tether</p>
+            </div>
+            <div class="crypto_block">
+                <img src="img/solana.png" />
+                <p>Solana</p>
+            </div>
+            <!-- button - jumps to market page -->
+            <div class="crypto_block_no_border">
+                <button type="button" onclick="go_to_assets()">View more <br /> crypto   -></button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer class="footer">
+
+        <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav></button>
+        <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav></button>
+
+        <div class="footer-top" data-section>
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.svg" width="50" height="50" alt="Cryptex logo">
+                        Cryptex
+                    </a>
+
+                    <h2 class="footer-title">Let's talk! 🤙</h2>
+
+                    <a href="tel:+123456789101" class="footer-contact-link">+12 345 678 9101</a>
+
+                    <a href="mailto:longdnsws00428@fpt.edu.vn" class="footer-contact-link">longdnsws00428@fpt.edu.vn</a>
+
+                    <address class="footer-contact-link">
+                        A35 Bach Dang Street, Ward 2, Tan Binh District, Ho Chi Minh City
+                    </address>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Products</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Spot</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Inverse Perpetual</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">USDT Perpetual</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Exchange</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Launchpad</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Binance Pay</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Services</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Buy Crypto</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Markets</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Tranding Fee</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Affiliate Program</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Referral Program</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">API</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Support</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Bybit Learn</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Help Center</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">User Feedback</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Submit a request</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">API Documentation</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Trading Rules</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">About Us</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">About Bybit</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Authenticity Check</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Careers</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Business Contacts</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Blog</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2024 Cryptex All Rights Reserved by <a href="#" class="copyright-link">HELLOTHERE</a>
+                </p>
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="./assets/js/script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
